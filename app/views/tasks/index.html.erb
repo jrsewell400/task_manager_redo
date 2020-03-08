@@ -1,0 +1,9 @@
+<h1>All Tasks</h1>
+
+<% @tasks.each do |task| %>
+  <h3><%= link_to task.title, "/tasks/#{task.id}" %></h3>
+  <p><%= task.description %></p3></br>
+  <%= link_to "Delete Task", "/tasks/#{task.id}", method: :delete %></br></br>
+<% end %>
+
+<%= link_to "Tasks Welcome", "/" %>
