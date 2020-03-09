@@ -1,24 +1,12 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Task manager prework done using erb tags as opposed to HTML tags.  Tests were also written for all functionality.
 
-Things you may want to cover:
+## Deployment Information
 
-* Ruby version
+Ruby version: 2.5.3
+Rails version: 5.1.7
 
-* System dependencies
+After cloning repo to local machine, run `rails db:{drop,create,migrate,seed}`
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Run `bundle exec rspec` to review test coverage.
