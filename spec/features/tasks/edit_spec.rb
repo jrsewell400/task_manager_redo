@@ -13,7 +13,6 @@ RSpec.describe "As a visitor,", type: :feature do
       fill_in :description, with: "This is Task 3"
       click_on "Submit"
 
-      save_and_open_page
       expect(page).to_not have_content("Task 1")
       expect(page).to_not have_content("This is Task 1")
       expect(page).to have_content("Task 3")
